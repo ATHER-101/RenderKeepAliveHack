@@ -21,6 +21,10 @@ app.get("/ping", (req, res) => {
     console.log("Ping received!")
 });
 
+app.get("/", (req, res) => {
+    res.sendS("Hello World! This is a service that pings itself every 5 minutes so that Render doesnt spin this down!.");
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Service running on port ${port}`);
