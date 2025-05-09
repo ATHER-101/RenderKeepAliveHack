@@ -22,7 +22,7 @@ app.get("/ping", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-    res.sendS("Hello World! This is a service that pings itself every 5 minutes so that Render doesnt spin this down!.");
+    res.send("Hello World! This is a service that pings itself every 5 minutes so that Render doesnt spin this down!.");
 });
 
 // Start the server
